@@ -1,0 +1,33 @@
+---
+title: "Developing Data Products Week 2 Assignment"
+author: "Manfred Herdt"
+date: "14 11 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+Sys.Date()
+```
+
+
+
+Load the library Leaflet.
+
+Add the marker to the map and display the map.
+
+
+```{r cars}
+library(leaflet)
+my_map <- leaflet() %>%
+addTiles()
+
+
+leaflet() %>%
+addTiles() %>%
+addMarkers(lat=51.22172, lng=6.77616, popup = "Düsseldorf Old Town")
+```
+
